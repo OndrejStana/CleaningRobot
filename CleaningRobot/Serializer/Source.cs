@@ -26,7 +26,7 @@ namespace CleaningRobot.Serializer
         /// <summary>
         /// Commands for the robot to execute.
         /// </summary>
-        public IList<CommandType> Commands { get; set; } = new List<CommandType>();
+        public IEnumerable<CommandType> Commands { get; set; } = Enumerable.Empty<CommandType>();
 
 
         /// <summary>
